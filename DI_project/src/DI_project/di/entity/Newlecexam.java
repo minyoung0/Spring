@@ -8,7 +8,22 @@ public class Newlecexam implements Exam {
 	private int com;
 	
 	
+	//기본 생성자
+	public Newlecexam() {
+		// TODO Auto-generated constructor stub
+	}
 	
+	
+	//오버로딩 생성자
+	public Newlecexam(int kor, int eng, int math, int com) {
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.com = com;
+	}
+
+
+
 	public int getKor() {
 		return kor;
 	}
@@ -51,6 +66,11 @@ public class Newlecexam implements Exam {
 	public float avg() {
 		// TODO Auto-generated method stub
 		return total()/4.0f;
+	}
+
+	@Override
+	public String toString() {
+		return "Newlecexam [kor=" + kor + ", eng=" + eng + ", math=" + math + ", com=" + com + "]";
 	}
 
 }
