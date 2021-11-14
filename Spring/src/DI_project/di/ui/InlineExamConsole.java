@@ -1,6 +1,7 @@
 package DI_project.di.ui;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import DI_project.di.entity.Exam;
 
@@ -22,6 +23,7 @@ public class InlineExamConsole implements ExamConsole {
 
 	}
 	@Autowired //자동으로 객체를 연결해달라
+	@Qualifier("exam1")
 	@Override
 	public void setExam(Exam exam) {
 		this.exam = exam;

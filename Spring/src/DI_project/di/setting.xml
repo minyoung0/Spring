@@ -22,7 +22,8 @@
 		value="80"/> <constructor-arg name="kor" value="10" /> <constructor-arg name="math" 
 		value="40" /> <constructor-arg name="eng" value="60" /> <constructor-arg 
 		name="com" value="40" /> </bean> -->
-	<bean id="exam" class="DI_project.di.entity.Newlecexam"></bean>
+	<bean id="exam1" class="DI_project.di.entity.Newlecexam" p:kor="10 " p:eng="10 " p:math="10 " p:com="10 "></bean>
+	<bean id="exam2" class="DI_project.di.entity.Newlecexam" p:kor="20 " p:eng="20 " p:math="20 " p:com="20 "></bean>
 
 	<!--ExamConsole console= new GridExamConsole(); -->
 	<bean id="console" class="DI_project.di.ui.InlineExamConsole">
@@ -31,10 +32,10 @@
 	<!-- property name="exam" ref="exam" -> setter함수에 dependency를 injection해줌 -->
 	</bean>
 
-	<util:list list-class="java.util.ArrayList" id="exams">
+	<!-- <util:list list-class="java.util.ArrayList" id="exams">
 		<bean class="DI_project.di.entity.Newlecexam" p:kor="10 " p:eng="10 " p:math="10 " p:com="10 "></bean>
-		<ref bean="exam" /> <!--id가 exam인 빈 참조 -->
-	</util:list>
+		<ref bean="exam" /> id가 exam인 빈 참조
+	</util:list> -->
 	
 	<!-- <bean id="exams" class="java.util.ArrayList"> <constructor-arg> <list> 
 		<bean class="DI_project.di.entity.Newlecexam" p:kor="10 " p:eng="10 " p:math="10 
