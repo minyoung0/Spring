@@ -8,7 +8,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
-	<context:annotation-config/><!-- 객체들이 annotation을 가지고 있다. config 중에서 일부는 annotation을 했으니까 찾아보아라 -->
+	<context:component-scan base-package="DI_project.di.ui,DI_project.di.entity"></context:component-scan>
+	<!-- <context:annotation-config/> --><!-- 객체들이 annotation을 가지고 있다. config 중에서 일부는 annotation을 했으니까 찾아보아라 -->
 	<!--Exam exam= new Newlecexam(); -->
 
 	<!-- 첫번째 방법 -->
@@ -22,15 +23,15 @@
 		value="80"/> <constructor-arg name="kor" value="10" /> <constructor-arg name="math" 
 		value="40" /> <constructor-arg name="eng" value="60" /> <constructor-arg 
 		name="com" value="40" /> </bean> -->
-	<bean id="exam1" class="DI_project.di.entity.Newlecexam" p:kor="10 " p:eng="10 " p:math="10 " p:com="10 "></bean>
-	<bean id="exam2" class="DI_project.di.entity.Newlecexam" p:kor="20 " p:eng="20 " p:math="20 " p:com="20 "></bean>
+	<!-- <bean id="exam1" class="DI_project.di.entity.Newlecexam" p:kor="10 " p:eng="10 " p:math="10 " p:com="10 "></bean>
+	<bean id="exam2" class="DI_project.di.entity.Newlecexam" p:kor="20 " p:eng="20 " p:math="20 " p:com="20 "></bean> -->
 
 	<!--ExamConsole console= new GridExamConsole(); -->
-	<bean id="console" class="DI_project.di.ui.InlineExamConsole">
-		<!--console.setExam(exam) -->
-	<!-- 	<property name="exam" ref="exam">setExam을 호출하기 위한 함수 exam이 역할을 해주는 annotation은 autowired reference 형 value형 </property> -->
-	<!-- property name="exam" ref="exam" -> setter함수에 dependency를 injection해줌 -->
-	</bean>
+	<!-- <bean id="console" class="DI_project.di.ui.InlineExamConsole">
+		console.setExam(exam)
+		<property name="exam" ref="exam">setExam을 호출하기 위한 함수 exam이 역할을 해주는 annotation은 autowired reference 형 value형 </property>
+	property name="exam" ref="exam" -> setter함수에 dependency를 injection해줌
+	</bean> -->
 
 	<!-- <util:list list-class="java.util.ArrayList" id="exams">
 		<bean class="DI_project.di.entity.Newlecexam" p:kor="10 " p:eng="10 " p:math="10 " p:com="10 "></bean>

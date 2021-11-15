@@ -3,6 +3,7 @@
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import DI_project.di.entity.Exam;
@@ -14,7 +15,7 @@ import DI_project.di.ui.InlineExamConsole;
 public class program {
 
 	public static void main(String[] args) {
-
+		//XML 기반
 		/*
 		 * 스프링에게 지시하는 방법으로 코드 변경 
 		 * Exam exam= new Newlecexam(); -------->생성 ExamConsole
@@ -31,7 +32,8 @@ public class program {
 		 */
 
 		// applicationcontext는 springframework사용해서 쓸 수있는 인터페이스
-		ApplicationContext context = new ClassPathXmlApplicationContext("DI_project/di/setting.xml");
+		//ApplicationContext context = new ClassPathXmlApplicationContext("DI_project/di/setting.xml"); xml 기반
+		ApplicationContext context= new AnnotationConfigApplicationContext(NewlecDIConfig.class);
 
 		//Exam exam=context.getBean(Exam.class);//exam을 직접 꺼내오려고 함 context에서 getbean하는데 exam이란느 녀석에 데이터가 있으면 객체를 반환해달라
 		//System.out.println(exam.toString());
