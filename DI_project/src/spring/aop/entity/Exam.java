@@ -1,4 +1,4 @@
-package DI_project.di.entity;
+package spring.aop.entity;
 
 public interface Exam {
 	int total();

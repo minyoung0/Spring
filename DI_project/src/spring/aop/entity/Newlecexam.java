@@ -1,33 +1,24 @@
-package DI_project.di.entity;
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
+package spring.aop.entity;
 
 public class Newlecexam implements Exam {
 
-	@Value("40")
 	private int kor;
 	private int eng;
 	private int math;
 	private int com;
-	
-	
-	//기본 생성자
+
+	// 기본 생성자
 	public Newlecexam() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	//오버로딩 생성자
+
+	// 오버로딩 생성자
 	public Newlecexam(int kor, int eng, int math, int com) {
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
 		this.com = com;
 	}
-
-
 
 	public int getKor() {
 		return kor;
@@ -63,14 +54,24 @@ public class Newlecexam implements Exam {
 
 	@Override
 	public int total() {
-		// TODO Auto-generated method stub
-		return kor+eng+math+com;
+		//long start = System.currentTimeMillis();
+		int result = kor + eng + math + com;
+		try {
+			Thread.sleep(200);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//long end = System.currentTimeMillis();
+		//String message = (end - start) + "ms 시간이 걸렸습니다";
+		//System.out.println(message);
+		return result;
 	}
 
 	@Override
 	public float avg() {
-		// TODO Auto-generated method stub
-		return total()/4.0f;
+		float result = total() / 4.0f;
+		return result;
 	}
 
 	@Override
