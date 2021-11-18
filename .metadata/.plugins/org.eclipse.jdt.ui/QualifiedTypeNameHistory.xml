@@ -12,4 +12,15 @@
     <fullyQualifiedTypeName name="DI_project.di.entity.Exam"/>
     <fullyQualifiedTypeName name="DI_project.di.entity.Newlecexam"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
 </qualifiedTypeNameHistroy>

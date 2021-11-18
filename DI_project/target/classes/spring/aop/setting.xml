@@ -4,13 +4,64 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="target" class="spring.di.entity.NewlecExam" p:kor="30" p:eng="20" p:math="40" p:com="30" />
-	<bean id="logAroundAdvice" class="spring.aop.LogAroundAdvice"/>
-	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+	<bean id="target" class="spring.aop.entity.Newlecexam" p:kor="30" p:eng="20" p:math="40" p:com="30" />
+	 <bean id="logAroundAdvice" class="spring.aop.advice.LogAroundAdvice"/>
+	 <bean id="logBeforeAdvice" class="spring.aop.advice.LogBeforeAdvice"/>
+	 <bean id="logAfterReturningAdvice" class="spring.aop.advice.LogAfterReturningAdvice"/>
+	 <bean id="logAfterThrowingAdvice" class="spring.aop.advice.LogAfterThrowingAdvice"/>
+	 
+	 
+	 
+	 <!-- <bean id="classPointCut" class="org.springframework.aop.support.NameMatchMethodPointcut">
+	 	<property name="mappedName" value="total"/>  total의 이름을 가진 함수만 조인포인트로 위빙하기 위해 property 추가 advice와 연결되어야함(또 다른 도구가 필요함)
+	 </bean>
+	 
+	 <bean id="classBeforeAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+	 	classicPointCut의 total과 exam 빈의 logBeforeAdvice를 연결하기 위한 역할
+	 	<property name="advice" ref="logBeforeAdvice"/>
+	 	<property name="pointcut" ref="classPointCut"/>
+	 </bean>
+	 
+	 	  <bean id="classAroundAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+	 	<property name="advice" ref="logBeforeAdvice"/>
+		<property name="mappedName" value="total">
+		</property>
+	 </bean>
+	  -->
+	  <!--  <bean id="classAroundAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+	 	<property name="advice" ref="logAroundAdvice"/>
+		<property name="mappedName" value="total">mappedNames 하면 <list> <value>total</value> <value>avg</value> 식으로 여러개 가능
+		</property>
+	 </bean> -->
+	  <!-- advisor 와 pointcut 합친 기능 -->
+	  <!--  <bean id="classBeforeAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+	 	<property name="advice" ref="logBeforeAdvice"/>
+		<property name="mappedNames">
+			<list>
+				<value>total</value>
+				<value>avg</value>
+			</list>
+		</property>
+	 </bean> -->
+   <bean id="classBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+	 	<!-- Regexp: regular express? -->
+	 	<property name="advice" ref="logBeforeAdvice"/>
+		<property name="mappedNames">
+			<list>
+				<value>.*to.*</value><!-- to가 들어간 함수 실행 -->
+
+			</list>
+		</property>
+	 </bean>
+	 
+	<bean id="exam" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="target" ref="target"/>
 		<property name="interceptorNames">
 			<list>
 				<value>logAroundAdvice</value>
+				<value>classBeforeAdvisor</value>
+				<value>logAfterReturningAdvice</value>
+				<value>logAfterThrowingAdvice</value>
 			</list>
 		</property>		
 	</bean>
