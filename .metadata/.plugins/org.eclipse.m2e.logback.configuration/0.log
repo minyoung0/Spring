@@ -1989,3 +1989,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration program references 
 2021-11-18 19:41:36,732 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-11-18 19:41:36,742 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-11-18 19:41:36,745 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\github_minyoung\Spring\DI_project\src\test\resources
+2021-11-19 19:10:54,061 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
