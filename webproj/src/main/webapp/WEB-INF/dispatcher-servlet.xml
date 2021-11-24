@@ -1,1 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- https://docs.spring.io/spring-framework/docs/5.1.x/spring-framework-reference/ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="/index" class="IndexController"><!-- id에 url을 쓰는것. container에 담겨있는 객체에서 사용자요청이 오면 url로 요청이 옴 -->   
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+</beans>
