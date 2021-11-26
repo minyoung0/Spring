@@ -23,4 +23,6 @@
     <fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
     <fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
     <fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
+    <fullyQualifiedTypeName name="javax.sound.midi.ControllerEventListener"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.Controller"/>
 </qualifiedTypeNameHistroy>
