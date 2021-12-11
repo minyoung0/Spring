@@ -10,7 +10,7 @@
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1635137069397"/>
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
-    <tags>shellMaximized</tags>
+    <tags>shellMinimized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_O5mo4lTmEeyKcrRjWTlsvw" selectedElement="_O5mo41TmEeyKcrRjWTlsvw" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_O5mo41TmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_O5mo5FTmEeyKcrRjWTlsvw">
         <children xsi:type="advanced:Perspective" xmi:id="_O5mo5FTmEeyKcrRjWTlsvw" elementId="org.eclipse.jst.j2ee.J2EEPerspective.&lt;Java EE>" selectedElement="_O5mo5VTmEeyKcrRjWTlsvw" label="&lt;Java EE>" iconURI="platform:/plugin/org.eclipse.jst.j2ee.ui/icons/full/cview16/j2ee_perspective.gif">
@@ -88,8 +88,10 @@
           <tags>persp.actionSet:ajelementCreation</tags>
           <tags>persp.newWizSC:ajaspectwizard</tags>
           <tags>persp.perspSC:org.eclipse.ajdt.ui.visualiser.AspectVisualizationPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_O5mo5VTmEeyKcrRjWTlsvw" selectedElement="_O5mo61TmEeyKcrRjWTlsvw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_O5mo5VTmEeyKcrRjWTlsvw" selectedElement="_O5mo5lTmEeyKcrRjWTlsvw" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_O5mo5lTmEeyKcrRjWTlsvw" elementId="topLeft" containerData="1995" selectedElement="_O5mo51TmEeyKcrRjWTlsvw">
+              <tags>active</tags>
+              <tags>noFocus</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_O5mo51TmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_O5nQtlTmEeyKcrRjWTlsvw" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -111,7 +113,6 @@
               <children xsi:type="basic:PartSashContainer" xmi:id="_O5mo7FTmEeyKcrRjWTlsvw" containerData="5000" selectedElement="_O5mo7lTmEeyKcrRjWTlsvw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_O5mo7VTmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.editorss" containerData="8364" ref="_O5nQqlTmEeyKcrRjWTlsvw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_O5mo7lTmEeyKcrRjWTlsvw" elementId="PartStack@24900d4b" containerData="1636" selectedElement="_O5mo71TmEeyKcrRjWTlsvw">
-                  <tags>active</tags>
                   <tags>noFocus</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_O5mo71TmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.views.ContentOutline" ref="_O5nQ-FTmEeyKcrRjWTlsvw" closeable="true">
                     <tags>View</tags>
@@ -642,6 +643,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1635137069397&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_O5nQt1TmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -792,7 +795,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
       <menus xmi:id="_O5nQ-VTmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.views.ContentOutline">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -944,7 +946,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_O5nRKVTmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_O5nRMVTmEeyKcrRjWTlsvw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_O5sK5lTmEeyKcrRjWTlsvw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_U6mjx1VvEeyXQ7cQXQuPCA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_O5sK5lTmEeyKcrRjWTlsvw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_O5nRNlTmEeyKcrRjWTlsvw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -984,10 +986,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_O5n3FlTmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_O5n3HFTmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_O5sKi1TmEeyKcrRjWTlsvw"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_O5n3IVTmEeyKcrRjWTlsvw" elementId="org.eclipse.jst.jsp.core.jspsource.source" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_U6wUyFVvEeyXQ7cQXQuPCA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_O5sKi1TmEeyKcrRjWTlsvw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_O5n3IlTmEeyKcrRjWTlsvw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2353,18 +2352,18 @@
     <tags>View</tags>
     <tags>categoryTag:Spring</tags>
   </descriptors>
-  <trimContributions xmi:id="_O5q7hlTmEeyKcrRjWTlsvw" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
-    <children xsi:type="menu:ToolControl" xmi:id="_O5q7h1TmEeyKcrRjWTlsvw" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
       <tags>glue</tags>
       <tags>move_after:PerspectiveSpacer</tags>
       <tags>SHOW_RESTORE_MENU</tags>
     </children>
-    <children xsi:type="menu:ToolControl" xmi:id="_O5q7iFTmEeyKcrRjWTlsvw" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
       <tags>move_after:Spacer Glue</tags>
       <tags>HIDEABLE</tags>
       <tags>SHOW_RESTORE_MENU</tags>
     </children>
-    <children xsi:type="menu:ToolControl" xmi:id="_O5rhYFTmEeyKcrRjWTlsvw" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
       <tags>glue</tags>
       <tags>move_after:SearchField</tags>
       <tags>SHOW_RESTORE_MENU</tags>
